@@ -10,5 +10,8 @@ const makeRandomMessage = () => {
         let randomIndex = Math.floor(Math.random() * messagePiece.length);
         randomMessage.push(messagePiece[randomIndex]);
     }
-    return randomMessage;
+
+    return randomMessage.join(' ');
 };
+
+console.log(makeRandomMessage());
